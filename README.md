@@ -25,22 +25,21 @@ alternative measures of recruiter-producer ratio. The data are used by `construc
 
 ## Code
 
-There is one Stata program and several Matlab programs.
+The results are produced with Stata code and Matlab code.
 
-* `construct_replacement_rate.do` constructs the effective replacement rate of the UI program in the United States for 1990–2014. The procedure to construct the effective replacement rate is described in Section II.B and Online Appendix C.
-* `format_figure.m`, `format_simulation.m`, and `format_big.m` contain code to format the Matlab figures.
-* `quarter.m` transforms a monthly time series into a quarterly time series.
-* `construct_recruiter_producer_ratio.m` constructs the three alternative measures of recruiter-producer ratio, the synthetic measure of recruiter-producer ratio, as well as intermediate statistics. The procedures to construct the various measures of recruiter-producer ratio and the intermediate statistics are described in Section II.A and Online Appendix B.
-* `plot_statistics.m` uses the data in `statistics.xlsx` to produce several figures
-from the article and online appendices:
+* The Stata script `construct_replacement_rate.do` constructs the effective replacement rate of the UI program in the United States for 1990–2014. The procedure to construct the effective replacement rate is described in Section II.B and Online Appendix C.
+* The Matlab helper scripts `format_figure.m`, `format_simulation.m`, and `format_big.m` contain code to format the Matlab figures.
+* The Matlab function `quarter.m` transforms a monthly time series into a quarterly time series.
+* The Matlab script `construct_recruiter_producer_ratio.m` constructs the three alternative measures of recruiter-producer ratio, the synthetic measure of recruiter-producer ratio, as well as intermediate statistics. The procedures to construct the various measures of recruiter-producer ratio and the intermediate statistics are described in Section II.A and Online Appendix B.
+* The Matlab script `plot_statistics.m` uses the data in `statistics.xlsx` to produce several figures from the article and online appendices:
 	- Figures 1: panels A and B
 	- Figure 2
 	- Figure 3
 	- Figure 5
 	- Figure 6
 	- Figure A1: panels A, B, C, and D
-* `solve_formula.m` uses the sufficient statistics in `statistics.xlsx` and the sufficient-statistic formula in the article to solve for the optimal UI replacement rate in the United States over the 1990–2014 period. The formula and procedure to solve it are described in Section IV.B. The results are displayed in Figure 7. The program also performs the sensitivity analysis described in Section IV.C and Online Appendix F. The results of the sensitivity analysis are reported in Figure 8.
-* `simulation_ui.m` simulates the job-rationing model of Michaillat (2012) under various UI programs: when UI is given by the exact optimal formula (formula (11)); when UI is given by the approximate optimal formula (formula (21)); when UI is given by the Baily-Chetty formula; and when UI is constant at a replacement rate of 42%. The simulations allow us to assess the accuracy of the approximate formula (21) and to compute the welfare gains from optimal UI. The simulations are described in Sections IV.D and IV.E and in Online Appendix H. The calibration of the simulation model is described in Online Appendix G. The program produces several figures from the article and online appendices:
+* The Matlab script `solve_formula.m` uses the sufficient statistics in `statistics.xlsx` and the sufficient-statistic formula in the article to solve for the optimal UI replacement rate in the United States over the 1990–2014 period. The formula and procedure to solve it are described in Section IV.B. The results are displayed in Figure 7. The script also performs the sensitivity analysis described in Section IV.C and Online Appendix F. The results of the sensitivity analysis are reported in Figure 8.
+* The Matlab script `simulation_ui.m` simulates the job-rationing model of Michaillat (2012) under various UI programs: when UI is given by the exact optimal formula (formula (11)); when UI is given by the approximate optimal formula (formula (21)); when UI is given by the Baily-Chetty formula; and when UI is constant at a replacement rate of 42%. The simulations allow us to assess the accuracy of the approximate formula (21) and to compute the welfare gains from optimal UI. The simulations are described in Sections IV.D and IV.E and in Online Appendix H. The calibration of the simulation model is described in Online Appendix G. The script produces several figures from the article and online appendices:
 	- Figure 9
 	- Figure 10 
 	- Figure A2

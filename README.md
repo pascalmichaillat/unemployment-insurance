@@ -7,7 +7,7 @@ This repository contains the code and data to produce the results in the article
 The data are stored in three Excel workbooks.
 
 * `data_recruiter_producer_ratio.xlsx` contains the data used to construct the
-alternative measures of recruiter-producer ratio. The data are used by `construct_re- cruiter_producer_ratio.m`. The workbook contains five worksheets.
+alternative measures of recruiter-producer ratio. The data are used by `construct_recruiter_producer_ratio.m`. The workbook contains five worksheets.
 	- `CES` contains US data from the BLS Current Employment Statistics (CES) survey for 1990–2014.
 	- `JOLTS` contains US data from the BLS Job Openings and Labor Turnover Survey (JOLTS) for 2001–2014.
 	- `Barnichon (2010)` contains the help-wanted index constructed by Barnichon (2010) for the United States, 1990–2014.
